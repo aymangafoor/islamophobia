@@ -1,0 +1,28 @@
+.banner{
+    background-image: url('../../component/assets/about.jpg');
+    background-size: cover;
+    height: 300px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    font-family: 'Roboto',normal;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.banner h3{
+    color: white;
+}
+.about-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

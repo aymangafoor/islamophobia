@@ -1,0 +1,110 @@
+.logo{
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FAB62F;
+}
+.sub-logo{
+    font-family: Georgia !important;
+    font-style: italic !important;
+    font-weight: normal;
+    margin-left: 350px;
+    font-size: 28px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #333333;
+}
+.search{
+    height: 30px;
+    width: 30px;
+}
+.header a{
+    text-decoration: none;
+    margin-right: 10px;
+    border-right: 1px solid  #a5a5a5;
+    font-family: 'Roboto',normal;
+    font-weight: bold;
+    color: black;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+.header a:last-child{
+    border-right: none;
+}
+.header a:hover{
+    color:#FAB62F;
+    text-decoration: none;
+}
+
+.header a :focus{
+    color:#FAB62F;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 575px) {
+    .header-mob{
+        display: none;
+    }
+    
+    .menus{
+        display: none;
+    }
+}
+@media screen and (max-width: 575px) {
+    .header{
+        display: none;
+    }
+    .menus{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        background-color: white;
+        width: 100%;
+        z-index: 999;
+    }
+    .menus a{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-family: 'Roboto',normal;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: black;
+        margin-bottom: 30px;
+    }
+    .menus a:first-child{
+        font-size: 18px !important;
+        font-weight: 700 !important;
+    }
+    .header-mob .logo{
+        font-size: 23px !important;
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+
+    }
+    .header-mob .sub-logo{
+        font-size: 14px !important;
+        margin-left: 130px !important;
+        margin-top: -15px;
+    }
+    .header-mob .search{
+        height: 18px;
+        width: 21px;
+    }
+}

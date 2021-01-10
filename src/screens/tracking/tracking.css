@@ -1,0 +1,75 @@
+.banner{
+    background-image: url('../../component/assets/about.jpg');
+    background-size: cover;
+    height: 300px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button ::after{
+    border: none;
+}
+button{
+    border:1px solid yellow;
+}
+.small-box{
+    height: 23px;
+    width: 23px;
+    background-color: #855CF8;
+}
+.boxes{
+    transform: rotate(180deg);
+}
+.value{
+    transform: rotate(180deg);   
+}
+.boxe1{
+    height: 96px;
+width: 41px;
+background:grey;
+}
+.boxe2{
+    height: 190px;
+width: 41px;
+
+background:grey;
+}
+.boxe3{
+    height: 146px;
+width: 41px;
+
+background:grey;
+}
+.boxe4{
+    height: 174px;
+    width: 41px;
+    background:grey;
+}
+.boxe5{
+    height: 184px;
+width: 41px;
+
+background:grey;
+}
+.boxe6{
+    height: 122px;
+width: 41px;
+background:grey;
+}
+.boxe7{
+    height: 152px;
+    width: 41px;
+    background:grey;
+}
+.boxe8{
+    height: 168px;
+width: 41px;
+background:grey;
+}
+.boxe9{
+    height: 101px;
+width: 41px;
+background: #855CF8;
+}

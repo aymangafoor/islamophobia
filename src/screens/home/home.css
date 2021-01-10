@@ -1,0 +1,135 @@
+.home{
+    background-color: #FAB62F;
+}
+.tr-is{
+    padding-top: 72px;
+    font-family: 'Roboto', normal;
+    color: #FFFFFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.chart{
+    margin-top: 45px;
+}
+.chart1{
+    margin-left: 40px;
+    margin-right: 20px;
+    height: 340px;
+    width: 586px;
+}
+.chart2{
+    height: 340px;
+    width: 586px;
+}
+.rectangle{
+    background-color: white;
+    margin-left: 40px;
+    margin-top: 19px;
+    height: 338px;
+    width: 1192px;
+}
+.everyday{
+    margin-top: 40px;
+    background-color: white;
+    z-index: 99;
+}
+.everyday-text{
+    color:#FAB62F;
+    font-family: 'Roboto',normal;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    
+}
+.seemore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border: 1px solid white
+}
+.see-btn{
+    background-color: #FAB62F;
+    border: 1px solid white;
+    height: 63px;
+    width: 230px;
+    color: #FFFFFF;
+}
+.library{
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    font-family: 'Roboto',normal;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FAB62F;
+}
+.library div div{
+    font-family: 'Roboto',normal;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+
+}
+.card-image{
+    height: 201px;
+    width: 589px;
+}
+@media screen and (max-width: 575px) {
+    .library{
+        display: none;
+    }
+}
+.hate{
+font-family: 'Roboto',normal;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0em;
+text-align: left;
+}
+.hate-text{
+    font-family: 'Roboto',normal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+
+}
+.hate-img{
+    height: 495px;
+    width: 612px;
+}
+.container div{
+    font-family: 'Roboto',normal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+.see-btn2{
+    background-color: #FFFFFF;
+    border: 1px solid #FAB62F;
+    height: 63px;
+    width: 230px;
+    color: #FAB62F;
+}
