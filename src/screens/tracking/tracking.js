@@ -11,11 +11,12 @@ import graph3 from '../../component/assets/graph3.jpg'
 import graph4 from '../../component/assets/graph4.jpg'
 import graph5 from '../../component/assets/graph5.jpg'
 import graph6 from '../../component/assets/graph6.jpg'
+import { Toggle } from '../../component'
 
 
 
 const Tracking = () => {
-    const [list,changeList] = useState(false)
+    const [list,changeList] = useState(true)
     const [map,changeMap] = useState(false)
     const [graph,changeGraph] = useState(false)
     const showList =()=>{
@@ -47,47 +48,13 @@ const Tracking = () => {
                     </div>
                 </div>
                 <div className='dropdown'>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Date</button>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Place of the incident</button>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Legal Aid</button>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Party in power</button>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Role of Police</button>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nature of Harm</button>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Causal Factors</button>
-                </div>
-                <div className='row'>
-                    <div className='col-2.5 mb-3 ml-3 border'>
-                        <button className='bttn' style={{ backgroundColor: list ? 'yellow' : 'white', color: list ? 'white' : 'yellow' }} onClick={() => showList()}>List</button>
-                        <button className='bttn' style={{ backgroundColor: map ? 'yellow' : 'white', color: map ? 'white' : 'yellow' }} onClick={() => showMap()}>Map</button>
-                        <button className='bttn' style={{ backgroundColor: graph ? 'yellow' : 'white', color: graph ? 'white' : 'yellow' }} onClick={() => showGraph()}>Graph</button>
-                    </div>
-                </div>
-                <div className='container py-3' style={{ display: !list ? 'none' : '' }}>
-                    <div className='row mb-3 d-flex justify-content-center'>
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                    </div>
-                    <div className='row mb-3 d-flex justify-content-center'>
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                    </div>
-                    <div className='row mb-3 d-flex justify-content-center'>
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                    </div>
-                </div>
-                <div className='container d-flex justify-content-center py-3' style={{ display: map ? '' : 'none' }}>
-                    <img className='col-6' src={maps} alt='' />
-                    <div className='col-4 bg-light d-flex flex-column h-25 w-25'>
+                    <button class="btn dropdown-toggle">Date</button>
+                    <button class="btn dropdown-toggle" type="button">Place of the incident</button>
+                    <button class="btn dropdown-toggle" type="button">Legal Aid</button>
+                    <button class="btn dropdown-toggle" type="button">Party in power</button>
+                    <button class="btn dropdown-toggle" type="button">Role of Police</button>
+                    <button class="btn dropdown-toggle" href="#" role="button"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nature of Harm</button>
+                    <div className='dropdown-menu'  aria-labelledby="dropdownMenuLink">
                         <div class="mb-3">
                             <input type="checkbox" aria-label="Checkbox for following text input" />
                         Social Boycott
@@ -105,8 +72,42 @@ const Tracking = () => {
                         Damage/Theft of Property
                     </div>
                     </div>
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Causal Factors</button>
                 </div>
-                <div className='container-fluid' stye={{ display: graph ? '' : 'none' }}>
+                <div className='row'>
+                    <div className='col-2.5 mb-3 ml-3 border'>
+                        <Toggle className='bttn' style={{ backgroundColor: list ? '#FAB62F' : 'white', color: list ? 'white' : '#FAB62F' }} onClick={() => showList()}>List</Toggle>
+                        <Toggle className='bttn' style={{ backgroundColor: map ? '#FAB62F' : 'white', color: map ? 'white' : '#FAB62F' }} onClick={() => showMap()}>Map</Toggle>
+                        <Toggle className='bttn' style={{ backgroundColor: graph ? '#FAB62F' : 'white', color: graph ? 'white' : '#FAB62F' }} onClick={() => showGraph()}>Graph</Toggle>
+                    </div>
+                </div>
+                <div className='container py-3' style={{ display: !list ? 'none' : '' }}>
+                    <div className='row mb-3 justify-content-center'>
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                    </div>
+                    <div className='row mb-3 d-flex justify-content-center'>
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                    </div>
+                    <div className='row mb-3 d-flex justify-content-center'>
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                        <img className='col-2' src={list_img} alt='..' />
+                    </div>
+                </div>
+                <div className='container justify-content-center py-3' style={{ display: map ? 'flex' : 'none' }}>
+                    <img className='col-6' src={maps} alt='' />
+                </div>
+                <div className='container' style={{ display: graph ? '' : 'none' }}>
                     <div className='row mb-1'>
                         <div className='col-5 mr-1 border border-primary'>
                             <h6>Place of the Incident</h6>

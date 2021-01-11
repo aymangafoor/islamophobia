@@ -20,13 +20,14 @@ const Home = () => {
         <div>
             <Header />
             <div className='home'>
-                <div className='tracking'>
+                <div className='tracking container-fluid'>
                     <div className='tr-is'>Tracking Islamophobia</div>
                     <div className='row m-4'>
-                        <img className='col-lg-6 col-sm-12 pb-2' src={chart1} />
+                        <img className='col-lg-6 col-sm-12' src={chart1} />
                         <img className='col-lg-6 col-sm-12' src={chart2} />
                     </div>
-                    <div className='col-10 card'></div>
+                    <div className='container-fluid'><div className='white-box col-12 pl-1'></div></div>
+                    
                 </div>
                 <div className='everyday'>
                     <div className='everyday-text'>Everyday Islamophobia</div>
@@ -45,11 +46,11 @@ const Home = () => {
                         Islamophobia Library
                         <div className='row m-4'>
                             <div className='col-lg-6'>
-                                <h5>Article</h5>
+                                <h5 className='ml-2'>Article</h5>
                                 <img className='card-image' src={micro1} />
                             </div>
                             <div className='col-lg-6'>
-                                <h5>Books</h5>
+                                <h5 className='ml-2'>Books</h5>
                                 <img className='card-image' src={micro2} />
                             </div>
 
@@ -60,7 +61,7 @@ const Home = () => {
                                 <img className='card-image' src={micro3} />
                             </div>
                             <div className='col-lg-6'>
-                                <h5 className='col-lg-6'>Podcast</h5>
+                                <h5 className='col-lg-12 col-sm-12 ml-2'>Podcast</h5>
                                 <img className='card-image' src={micro4} />
                             </div>
                         </div>
@@ -88,7 +89,6 @@ const Home = () => {
                 </div>
 
             </div>
-
             <Footer />
         </div>
     )

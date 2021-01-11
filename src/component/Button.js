@@ -1,4 +1,5 @@
-import styled,{createGlobalStyle} from "styled-components";
+import styled from "styled-components";
+import Roboto from './fonts/Roboto.ttf'
 
 const Button = styled.button`
 height: 63.17073440551758px;
@@ -8,7 +9,7 @@ color: ${props => props.white ? "white" : "#FAB62F"};
 border: 2px solid;
 border-color: ${props => props.white ? "white" : "#FAB62F"}
 box-sizing: border-box;
-font-family: Normal;
+font-family: ${Roboto};
 font-size: 20px;
 font-style: normal;
 font-weight: 700;

@@ -9,19 +9,22 @@ const Header = () => {
     const [menus, open] = useState(false)
     return (
         <div>
-            <div className='header container pt-5'>
-                <div className='row d-flex pt-4'>
-                    <img className='search col-1' onClick={() => alert('get')} alt='search' src={search} />
-                    <div className='logo d-flex flex-column justify-content-center col-9'>
-                        <h2 className='logo'>Islamophobia</h2>
-                        <div className='sub-logo'>India</div>
-                    </div>
+            <div className='header container-fluid pt-5'>
+                <div className='row d-flex pt-4 ml-2'>
+                    <img className='search ml-5' onClick={() => alert('get')} alt='search' src={search} />
+                    <Link to='/' className='logo d-flex flex-column justify-content-center col-9' style={{textDecoration:'none'}}>
+                        <div className='logo d-flex flex-column justify-content-center col-9'>
+                            <h2 className='logo'>Islamophobia</h2>
+                            <div className='sub-logo'>India</div>
+                        </div>
+                    </Link>
+
                     <div className='add col-2'>
-                        <button className='add-btn'>Add Data</button>
+                        <button className='add-btn'><div className='h8 text-align-center'>ADD DATA</div></button>
                     </div>
                 </div>
-                <div className='container mt-4'>
-                    <div className='row d-flex justify-content-center'>
+                <div className='links container mt-4'>
+                    <div className='row col-12 d-flex justify-content-center'>
                         <Link to='/definition'>Definition</Link>
                         <Link to='/tracking'>Tracking Islamophobia</Link>
                         <Link to='/everyday'>Everyday Islamophobia</Link>

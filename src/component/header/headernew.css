@@ -15,16 +15,24 @@
     font-style: italic !important;
     font-weight: normal;
     margin-left: 350px;
+    margin-top: 10px;
     font-size: 28px;
     line-height: 18px;
     letter-spacing: 0.2px;
     color: #333333;
 }
-.search{
-    height: 30px;
-    width: 30px;
+.header button{
+    height: 52px;
+    width: 160px;
 }
-.header a{
+.header button div{
+    text-align: center;
+}
+.search{
+    height: 30px !important;
+    width: 30px !important;
+}
+.links a{
     text-decoration: none;
     margin-right: 10px;
     border-right: 1px solid  #a5a5a5;
@@ -34,15 +42,15 @@
     padding-right: 10px;
     margin-bottom: 20px;
 }
-.header a:last-child{
+.links a:last-child{
     border-right: none;
 }
-.header a:hover{
+.links a:hover{
     color:#FAB62F;
     text-decoration: none;
 }
 
-.header a :focus{
+.links a :focus{
     color:#FAB62F;
     text-decoration: none;
 }
