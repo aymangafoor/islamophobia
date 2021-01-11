@@ -95,6 +95,11 @@
     height: 338px;
     background-color: #FFFFFF;
 }
+@media screen and (min-width: 575px) {
+    .quick{
+        display: none;
+    }
+}
 @media screen and (max-width: 575px) {
     .library{
         display: none;
@@ -104,6 +109,13 @@
     }
     .white-box{
         display: none;
+    }
+    .datas{
+        border: 3px solid #FAB62F;
+        height: 82px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        width: 90%;
     }
 }
 .hate{

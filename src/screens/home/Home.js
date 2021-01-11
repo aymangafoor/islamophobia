@@ -12,6 +12,7 @@ import micro2 from '../../component/assets/micro2.jpg'
 import micro3 from '../../component/assets/micro3.jpg'
 import micro4 from '../../component/assets/micro4.jpg'
 import hate from '../../component/assets/hate.jpg'
+import bag from '../../component/assets/bag.png'
 import { Button } from '../../component'
 
 
@@ -27,7 +28,7 @@ const Home = () => {
                         <img className='col-lg-6 col-sm-12' src={chart2} />
                     </div>
                     <div className='container-fluid'><div className='white-box col-12 pl-1'></div></div>
-                    
+
                 </div>
                 <div className='everyday'>
                     <div className='everyday-text'>Everyday Islamophobia</div>
@@ -40,6 +41,27 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='seemore'><Button white>SEE MORE</Button></div>
+                </div>
+                <div className='quick'>
+                    <h4 className='ml-5'>Quick Sections</h4>
+                    <div className='col-sm-12  d-flex justify-content-center'>
+                        <div className='datas row'>
+                            <img className='col-2' alt='..' src={bag} />
+                            <div className='h7 col-10 d-flex align-items-center'>Islamophobia Library</div>
+                        </div>
+                    </div>
+                    <div className='col-sm-12  d-flex justify-content-center'>
+                        <div className='datas row'>
+                            <img className='col-2' alt='..' src={bag} />
+                            <div className='h7 col-10 d-flex align-items-center'>Hate Groups</div>
+                        </div>
+                    </div>
+                    <div className='col-sm-12  d-flex justify-content-center'>
+                        <div className='datas row'>
+                            <img className='col-2' alt='..' src={bag} />
+                            <div className='h7 col-10 d-flex align-items-center'>Everyday Islamophobia</div>
+                        </div>
+                    </div>
                 </div>
                 <div className='library'>
                     <div className='column m-2'>
@@ -68,7 +90,6 @@ const Home = () => {
                     </div>
                     <div className='card'></div>
                     <div className='column'>
-
                         <div className='container fluid'>
                             <h2 className='hate'>Hate Groups</h2>
                             <div className='row mb-3'>
@@ -81,10 +102,7 @@ const Home = () => {
                                 </div>
                                 <img className='hate-img col-5' src={hate} />
                             </div>
-
-
                         </div>
-
                     </div>
                 </div>
 

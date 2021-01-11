@@ -53,7 +53,7 @@ const Header = () => {
                     {document.body.style.overflow = 'hidden'}
                 </div>
                 <div className='container ml-4 column'>
-                    <Link className='menu-tag col-sm-12 mb-4 mt-3' style={{ color: 'yellow' }} to=''>Menu</Link>
+                    <Link className='menu-tag col-sm-12 mb-4 mt-3' style={{ color: '#FAB62F' }} to=''>Menu</Link>
                     <Link className='col-sm-12' to='/definition'>Definition</Link>
                     <Link className='col-sm-12' to='/tracking'>Tracking Islamophobia</Link>
                     <Link className='col-sm-12' to='/everyday'>Everyday Islamophobia</Link>
