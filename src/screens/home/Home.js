@@ -30,6 +30,7 @@ const Home = () => {
                     <div className='container-fluid'><div className='white-box col-12 pl-1'></div></div>
 
                 </div>
+
                 <div className='everyday'>
                     <div className='everyday-text'>Everyday Islamophobia</div>
                     <div className='container'>

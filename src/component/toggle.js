@@ -15,5 +15,8 @@ font-weight: 700;
 line-height: 14px;
 letter-spacing: 0.05em;
 text-align: center;
+@media (max-width: 575px) {
+    border-radius: 6px;
+  }
 `;
 export default Toggle;

@@ -16,20 +16,21 @@ import { Toggle } from '../../component'
 
 
 const Tracking = () => {
-    const [list,changeList] = useState(true)
-    const [map,changeMap] = useState(false)
-    const [graph,changeGraph] = useState(false)
-    const showList =()=>{
+    const [list, changeList] = useState(true)
+    const [map, changeMap] = useState(false)
+    const [graph, changeGraph] = useState(false)
+    const [drops, drop] = useState(false)
+    const showList = () => {
         changeList(true)
         changeMap(false)
         changeGraph(false)
     }
-    const showMap =()=>{
+    const showMap = () => {
         changeList(false)
         changeMap(true)
         changeGraph(false)
     }
-    const showGraph =()=>{
+    const showGraph = () => {
         changeList(false)
         changeMap(false)
         changeGraph(true)
@@ -47,32 +48,34 @@ const Tracking = () => {
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src={search} alt='' /></button>
                     </div>
                 </div>
-                <div className='dropdown'>
+                <div className='row'>
                     <button class="btn dropdown-toggle">Date</button>
                     <button class="btn dropdown-toggle" type="button">Place of the incident</button>
                     <button class="btn dropdown-toggle" type="button">Legal Aid</button>
                     <button class="btn dropdown-toggle" type="button">Party in power</button>
                     <button class="btn dropdown-toggle" type="button">Role of Police</button>
-                    <button class="btn dropdown-toggle" href="#" role="button"  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nature of Harm</button>
-                    <div className='dropdown-menu'  aria-labelledby="dropdownMenuLink">
-                        <div class="mb-3">
-                            <input type="checkbox" aria-label="Checkbox for following text input" />
-                        Social Boycott
+                    <div className='column'>
+                        <button type="button" class="btn dropdown-toggle" onClick={() => { drops ? drop(false) : drop(true) }}>Nature of Harm</button>
+                        {drops ? <div className='drops col-3'>
+                            <div class="mb-3">
+                                <input type="checkbox" aria-label="Checkbox for following text input" />
+                            Social Boycott
+                        </div>
+                            <div class="mb-3">
+                                <input type="checkbox" aria-label="Checkbox for following text input" />
+                            Institutional Discrimination
+                        </div>
+                            <div class="mb-3">
+                                <input type="checkbox" aria-label="Checkbox for following text input" />
+                            Murders/Lynchings
+                        </div>
+                            <div class="mb-3">
+                                <input type="checkbox" aria-label="Checkbox for following text input" />
+                            Damage/Theft of Property
+                        </div>
+                        </div> : ''}
                     </div>
-                        <div class="mb-3">
-                            <input type="checkbox" aria-label="Checkbox for following text input" />
-                        Institutional Discrimination
-                    </div>
-                        <div class="mb-3">
-                            <input type="checkbox" aria-label="Checkbox for following text input" />
-                        Murders/Lynchings
-                    </div>
-                        <div class="mb-3">
-                            <input type="checkbox" aria-label="Checkbox for following text input" />
-                        Damage/Theft of Property
-                    </div>
-                    </div>
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Causal Factors</button>
+                    <button class="btn dropdown-toggle">Causal Factors</button>
                 </div>
                 <div className='row'>
                     <div className='col-2.5 mb-3 ml-3 border'>
@@ -82,34 +85,34 @@ const Tracking = () => {
                     </div>
                 </div>
                 <div className='container py-3' style={{ display: !list ? 'none' : '' }}>
-                    <div className='row mb-3 justify-content-center'>
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
+                    <div className='d-flex flex-row mb-3 justify-content-center'>
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
                     </div>
-                    <div className='row mb-3 d-flex justify-content-center'>
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
+                    <div className='d-flex flex-row mb-3 d-flex justify-content-center'>
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
                     </div>
-                    <div className='row mb-3 d-flex justify-content-center'>
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
-                        <img className='col-2' src={list_img} alt='..' />
+                    <div className='mb-3 d-flex  flex-row justify-content-center'>
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
                     </div>
                 </div>
                 <div className='container justify-content-center py-3' style={{ display: map ? 'flex' : 'none' }}>
                     <img className='col-6' src={maps} alt='' />
                 </div>
-                <div className='container' style={{ display: graph ? '' : 'none' }}>
+                <div className='container-fluid' style={{ display: graph ? '' : 'none' }}>
                     <div className='row mb-1'>
-                        <div className='col-5 mr-1 border border-primary'>
+                        <div className='col-5 mr-2 border border-primary'>
                             <h6>Place of the Incident</h6>
                             <div className='row boxes d-flex flex-row-reverse justify-content-center mb-2'>
                                 <div className='boxe1'><p className='d-flex justify-content-center value'>32</p></div>
@@ -123,28 +126,28 @@ const Tracking = () => {
                                 <div className='boxe9'><p className='d-flex justify-content-center value'>32</p></div>
                             </div>
                             <div className='row d-flex justify-content-center'>
-                            <div className='small-box mr-2' style={{backgroundColor: '#C4C4C4'}} />Place of the incident 
-                            <div className='small-box ml-2 mr-2' style={{}}/>Date
-                            </div>  
-                        </div> 
+                                <div className='small-box mr-2' style={{ backgroundColor: '#C4C4C4' }} />Place of the incident
+                            <div className='small-box ml-2 mr-2' style={{}} />Date
+                            </div>
+                        </div>
                         <div className='col-5 border border-primary'>
                             <h6>Party in Power</h6>
                             <div className='row'>
                                 <div className='col-5'>
                                     <div className='row'>
                                         <div className='small-box ml-2'> </div>
-                                       <div className='h7'>BJP</div>
+                                        <div className='h7'>BJP</div>
                                     </div>
                                     <div className='row'>
-                                        <div className='small-box ml-2' style={{backgroundColor:'#B085FF'}}> </div>
+                                        <div className='small-box ml-2' style={{ backgroundColor: '#B085FF' }}> </div>
                                         <div className='h7'>INC</div>
                                     </div>
                                     <div className='row'>
-                                        <div className='small-box ml-2' style={{backgroundColor:'#503795'}} > </div>
+                                        <div className='small-box ml-2' style={{ backgroundColor: '#503795' }} > </div>
                                         <div className='h7'>CPI(M)</div>
                                     </div>
                                     <div className='row'>
-                                        <div className='small-box ml-2' style={{backgroundColor:'#000000'}}> </div>
+                                        <div className='small-box ml-2' style={{ backgroundColor: '#000000' }}> </div>
                                         <div className='h7'>Color4</div>
                                     </div>
                                 </div>
@@ -154,7 +157,7 @@ const Tracking = () => {
                         </div>
                     </div>
                     <div className='row mb-1'>
-                        <div className='col-5 mr-1  border border-primary'>
+                        <div className='col-5 mr-2  border border-primary'>
                             <h6>Casual Factors</h6>
                             <img height={180} width={300} src={graph3} alt='..' />
                         </div>
@@ -164,7 +167,7 @@ const Tracking = () => {
                         </div>
                     </div>
                     <div className='row mb-1'>
-                        <div className='col-5 mr-1 border border-primary'>
+                        <div className='col-5 mr-2 border border-primary'>
                             <h6>Legal Aid</h6>
                             <img height={180} width={300} src={graph5} alt='..' />
                         </div>

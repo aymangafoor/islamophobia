@@ -22,6 +22,20 @@ button{
     color: white;
     border: none;
 }
+@media screen and (min-width: 575px){
+    input:focus{
+        border: 1px solid #FAB62F;
+    }
+}
+
+@media screen and (max-width: 575px){
+    input{
+        border-radius: 6px;
+    }
+    input:focus{
+        border-radius: 6px;
+    }
+}
 p{
 font-family: 'Roboto',normal;
 font-size: 20px;

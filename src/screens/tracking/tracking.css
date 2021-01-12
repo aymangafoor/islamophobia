@@ -19,6 +19,12 @@ outline: none;
     width: 23px;
     background-color: #855CF8;
 }
+.drops{
+    position: absolute;
+    z-index: 99;
+    font-size: 14px;
+    background-color: #F9F9F9;
+}
 .boxes{
     transform: rotate(180deg);
 }

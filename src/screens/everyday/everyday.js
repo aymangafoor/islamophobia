@@ -12,16 +12,16 @@ const Everyday = () => {
             <div className='banner'>
                 <h3>Everyday Islamophobia</h3>
             </div>
-            <div className='container'>
-                <div className='row mt-3'>
-                    <img className='col-4' src={img} alt='..' />
-                    <img className='col-4' src={img} alt='..' />
-                    <img className='col-4' src={img} alt='..' />
-                </div>
-                <div className='row mt-3 mb-3'>
-                    <img className='col-4' src={img} alt='..' />
-                    <img className='col-4' src={img} alt='..' />
-                    <img className='col-4' src={img} alt='..' />
+            <div className='everyday'>
+                <div className='container'>
+                    <div className='row mt-3'>
+                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
+                    </div>
                 </div>
             </div>
             <Footer />
