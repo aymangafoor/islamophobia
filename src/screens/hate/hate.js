@@ -12,8 +12,8 @@ const Hate = () => {
             <div className='banner'>
                 <h3>Islamophobs</h3>
             </div>
-            <div className='container mt-3'>
-                <div className='card'>
+            <div className='container-fluid px-5 mt-5 mb-5'>
+                <div className='card mt-2 mb-3'>
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src={img1} class="card-img" alt="..." />
@@ -26,7 +26,7 @@ const Hate = () => {
                         </div>
                     </div>
                 </div>
-                <div className='card'>
+                <div className='card mb-5'>
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img src={img2} class="card-img" alt="..." />

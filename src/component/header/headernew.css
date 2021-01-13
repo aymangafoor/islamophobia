@@ -109,7 +109,7 @@
     .header-mob .sub-logo{
         font-size: 14px !important;
         margin-left: 130px !important;
-        margin-top: -15px;
+        margin-top: -10px;
     }
     .header-mob .search{
         height: 18px;
@@ -117,5 +117,10 @@
     }
     .quick{
         background-color: white;
+    }
+    .tabs{
+        margin-top: 5px;
+        height: 22px;
+        width: 15px;
     }
 }

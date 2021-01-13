@@ -14,13 +14,13 @@ const Everyday = () => {
             </div>
             <div className='everyday'>
                 <div className='container'>
-                    <div className='row mt-3'>
-                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
-                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
-                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
-                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
-                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
-                        <img className='col-lg-4 col-sm-6' src={img} alt='..' />
+                    <div className='row mt-5 mb-3'>
+                        <img className='col-lg-4 col-sm-6 mb-5' src={img} alt='..' />
+                        <img className='col-lg-4 mb-5 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 mb-5 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 mb-5 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 mb-5 col-sm-6' src={img} alt='..' />
+                        <img className='col-lg-4 mb-5 col-sm-6' src={img} alt='..' />
                     </div>
                 </div>
             </div>

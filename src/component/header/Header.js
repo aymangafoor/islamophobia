@@ -44,8 +44,8 @@ const Header = () => {
                         </div>
 
                     </div>
-                    <img className='search col-1' onClick={() => alert('get')} alt='search' src={search} />
-                    {!menus ? <img className='search col-1' onClick={() => open(true)} alt='search' src={menu} /> : <img className='search col-1' onClick={() => open(false)} alt='search' src={close} />}
+                    <img className='search col' onClick={() => alert('get')} alt='search' src={search} />
+                    {!menus ? <img className='tabs col' onClick={() => open(true)} alt='search' src={menu} /> : <img className='tabs col' onClick={() => open(false)} alt='search' src={close} />}
                 </div>
             </div>
             {menus ? <div className='menus'>

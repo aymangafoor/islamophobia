@@ -60,13 +60,14 @@ class Footer extends React.Component {
                         <div className='footersublogo'>India</div>
                     </div>
                     <div className='social-mob col-sm-12'>
-                        <div className='row justify-content-center mr-4 mt-2 pb-2 border-bottom'>
+                        <div className='row justify-content-center mr-4 mt-2 pb-2'>
                             <img className='social' src={sm1} />
                             <img className='social' src={sm2} />
                             <img className='social' src={sm3} />
                             <img className='social' src={sm4} />
                         </div>
-                        <div className='copy col-sm-12 mt-2  mb-2 justify-content-center text-align-center'>© Copyright 2021. </div>
+                        <div className='hln'></div>
+                        <div className='copy col d-flex justify-content-center mt-2 mb-2 mx-auto'>© Copyright 2021. </div>
                     </div>
                 </div>
             </div>

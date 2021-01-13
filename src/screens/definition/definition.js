@@ -12,14 +12,14 @@ const Definition = () => {
                 <h3 >What is Islamophobia?</h3>
             </div>
             <div className='container'>
-                <div className='b1 mt-1 mb-1'>
+                <div className='b1 mt-1 mb-1 col-8 mx-auto'>
                     <h3>The Money Talk: The One with the Partner’s Bank Account</h3>
                     Not-so-fun fact: 61% of women say they’d rather talk about their own death than have a conversation about money.
                     That’s some societal money taboo BS, and we’re .
                     So this is The Money Talk, a series in which we’ll be answering example questions about how to kick-start important money convos.
                 </div>
                 <img className='about-img col-12 d-flex justify-content-center' src={img} />
-                <div className='b1 mt-1 mb-1'>
+                <div className='b1 mt-1 mb-1 col-8 mx-auto'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit congue amet justo, libero sed in convallis mi. Non posuere purus sed vulputate in. Adipiscing enim pellentesque rutrum quam neque augue sit nunc. Risus, maecenas vitae odio eu lobortis aliquam. Orci sit eleifend habitant purus. Neque, enim viverra quam faucibus tincidunt morbi dolor adipiscing magna. Non nisl, egestas elit, tellus nulla. Risus tortor, augue sit turpis fermentum at in lacus, non. Non facilisis elit vestibulum odio.
                     <br />
                     Turpis vitae tortor porttitor molestie ullamcorper tempor, nibh sed sem. Tellus dui a sit arcu vulputate ac quis.

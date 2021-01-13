@@ -22,17 +22,17 @@ const Library = () => {
             <div className='banner'>
                 <h3>Library</h3>
             </div>
-            <div className='container mt-2 mb-2'>
+            <div className='container-fluid px-5 mt-2 mb-2'>
                 <div className='row'>
                     <div className='col-lg-6'>
-                        <div className='row mb-3'>
+                        <div className='row px-5 mb-3'>
                             <Toggle clicked={article} onClick={() => showArticle(true)}>ARTICLES</Toggle>
                             <Toggle clicked={videos} onClick={() => showVideo(true)}>VIDEOS</Toggle>
                             <Toggle>BOOKS</Toggle>
                             <Toggle>PODCAST</Toggle>
                         </div>
                         <div style={{ display: !article ? 'none' : '' }}>
-                            <div className='column'>
+                            <div className='column px-4 mt-5'>
                                 <h6>Sed ut perspiciatis</h6>
                                 <div className='b2'>
                                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
@@ -40,7 +40,7 @@ const Library = () => {
                                     Neque porro quisquam est.
                             </div>
                             </div>
-                            <div className='column'>
+                            <div className='column px-4 mt-4'>
                                 <h6>Sed ut perspiciatis</h6>
                                 <div className='b2'>
                                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
@@ -48,7 +48,7 @@ const Library = () => {
                                     Neque porro quisquam est.
                             </div>
                             </div>
-                            <div className='column'>
+                            <div className='column px-4 mt-4'>
                                 <h6>Sed ut perspiciatis</h6>
                                 <div className='b2'>
                                     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
@@ -60,24 +60,24 @@ const Library = () => {
 
                     </div>
                     <div className='col-lg-6' style={{ display: !article ? 'none' : '' }}>
-                        <div className='row'>
-                            <Toggle clicked>LIST</Toggle>
-                            <Toggle>GRID</Toggle>
-                            <div className='column'>
+                        <div className='row d-flex justify-content-end pr-5 mb-5'>
+                                <Toggle clicked>LIST</Toggle>
+                                <Toggle>GRID</Toggle>   
+                            <div className='column mt-5 '>
                                 <h6>Lorem ipsum dolor</h6>
                                 <div className='b2'>
                                     Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.jsahdjashd
                                 </div>
                             </div>
-                            <div className='column'>
+                            <div className='column mt-4'>
                                 <h6>Lorem ipsum dolor</h6>
                                 <div className='b2'>
                                     Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.sadsadsadsa
                                 </div>
                             </div>
-                            <div className='column'>
+                            <div className='column mt-4'>
                                 <h6>Lorem ipsum dolor</h6>
                                 <div className='b2'>
                                     Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -86,28 +86,28 @@ const Library = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='container-fluid'>
-                        <div className='col-lg-12' style={{ display: !videos ? 'none' : '' }}>
-                            <div className='row mb-3 justify-content-center'>
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
+                    <div className='container'>
+                        <div className='container' style={{ display: !videos ? 'none' : '' }}>
+                            <div className='mb-3 d-flex justify-content-center'>
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
                             </div>
-                            <div className='row mb-3 d-flex justify-content-center'>
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
+                            <div className='mb-3 d-flex justify-content-center'>
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
                             </div>
-                            <div className='row mb-3 d-flex justify-content-center'>
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
-                                <img className='col-2' src={list_img} alt='..' />
+                            <div className='mb-3 d-flex justify-content-center'>
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
+                                <img className='col-3' src={list_img} alt='..' />
                             </div>
                         </div>
                     </div>

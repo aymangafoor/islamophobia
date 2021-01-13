@@ -41,14 +41,14 @@ const Tracking = () => {
             <div className='banner'>
                 <h3>Tracking Islamophobia</h3>
             </div>
-            <div className='container'>
-                <div class="input-group mb-3 mt-3">
+            <div className='container-fluid'>
+                <div class="input-group mb-3 mt-3 px-5">
                     <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" />
                     <div class="input-group-append">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src={search} alt='' /></button>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row px-5'>
                     <button class="btn dropdown-toggle">Date</button>
                     <button class="btn dropdown-toggle" type="button">Place of the incident</button>
                     <button class="btn dropdown-toggle" type="button">Legal Aid</button>
@@ -77,20 +77,20 @@ const Tracking = () => {
                     </div>
                     <button class="btn dropdown-toggle">Causal Factors</button>
                 </div>
-                <div className='row'>
-                    <div className='col-2.5 mb-3 ml-3 border'>
+                <div className='row px-5'>
+                    <div className='col-2.5 mb-3 px-3 ml-3'>
                         <Toggle className='bttn' style={{ backgroundColor: list ? '#FAB62F' : 'white', color: list ? 'white' : '#FAB62F' }} onClick={() => showList()}>List</Toggle>
                         <Toggle className='bttn' style={{ backgroundColor: map ? '#FAB62F' : 'white', color: map ? 'white' : '#FAB62F' }} onClick={() => showMap()}>Map</Toggle>
                         <Toggle className='bttn' style={{ backgroundColor: graph ? '#FAB62F' : 'white', color: graph ? 'white' : '#FAB62F' }} onClick={() => showGraph()}>Graph</Toggle>
                     </div>
                 </div>
                 <div className='container' style={{ display: !list ? 'none' : '' }}>
-                    <div className='row mb-3'>
-                        <img className='col' src={list_img} alt='..' />
-                        <img className='col' src={list_img} alt='..' />
-                        <img className='col' src={list_img} alt='..' />
-                        <img className='col' src={list_img} alt='..' />
-                        <img className='col' src={list_img} alt='..' />
+                    <div className='d-flex flex-row mb-3 d-flex justify-content-center'>
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
+                        <img className='col-3' src={list_img} alt='..' />
                     </div>
                     <div className='d-flex flex-row mb-3 d-flex justify-content-center'>
                         <img className='col-3' src={list_img} alt='..' />
