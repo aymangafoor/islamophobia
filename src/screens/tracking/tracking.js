@@ -84,13 +84,13 @@ const Tracking = () => {
                         <Toggle className='bttn' style={{ backgroundColor: graph ? '#FAB62F' : 'white', color: graph ? 'white' : '#FAB62F' }} onClick={() => showGraph()}>Graph</Toggle>
                     </div>
                 </div>
-                <div className='container py-3' style={{ display: !list ? 'none' : '' }}>
-                    <div className='d-flex flex-row mb-3 justify-content-center'>
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
+                <div className='container' style={{ display: !list ? 'none' : '' }}>
+                    <div className='row mb-3'>
+                        <img className='col' src={list_img} alt='..' />
+                        <img className='col' src={list_img} alt='..' />
+                        <img className='col' src={list_img} alt='..' />
+                        <img className='col' src={list_img} alt='..' />
+                        <img className='col' src={list_img} alt='..' />
                     </div>
                     <div className='d-flex flex-row mb-3 d-flex justify-content-center'>
                         <img className='col-3' src={list_img} alt='..' />
@@ -112,7 +112,7 @@ const Tracking = () => {
                 </div>
                 <div className='container-fluid' style={{ display: graph ? '' : 'none' }}>
                     <div className='row mb-1'>
-                        <div className='col-5 mr-2 border border-primary'>
+                        <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>
                             <h6>Place of the Incident</h6>
                             <div className='row boxes d-flex flex-row-reverse justify-content-center mb-2'>
                                 <div className='boxe1'><p className='d-flex justify-content-center value'>32</p></div>
@@ -130,7 +130,7 @@ const Tracking = () => {
                             <div className='small-box ml-2 mr-2' style={{}} />Date
                             </div>
                         </div>
-                        <div className='col-5 border border-primary'>
+                        <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>
                             <h6>Party in Power</h6>
                             <div className='row'>
                                 <div className='col-5'>
@@ -157,21 +157,21 @@ const Tracking = () => {
                         </div>
                     </div>
                     <div className='row mb-1'>
-                        <div className='col-5 mr-2  border border-primary'>
+                        <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>
                             <h6>Casual Factors</h6>
                             <img height={180} width={300} src={graph3} alt='..' />
                         </div>
-                        <div className='col-5 border border-primary'>
+                        <div className='col-lg-5 col-sm-12 border border-primary'>
                             <h6>Role of  Police</h6>
                             <img height={180} width={180} src={graph4} alt='..' />
                         </div>
                     </div>
                     <div className='row mb-1'>
-                        <div className='col-5 mr-2 border border-primary'>
+                        <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>
                             <h6>Legal Aid</h6>
                             <img height={180} width={300} src={graph5} alt='..' />
                         </div>
-                        <div className='col-5 border border-primary'>
+                        <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>
                             <h6>Nature of Harm</h6>
                             <img height={180} width={300} src={graph6} alt='..' />
                         </div>

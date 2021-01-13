@@ -16,9 +16,9 @@ const Contact = () => {
                     </div>
                     <div className='col-lg-8 col-sm-12 py-1'>
                         <h6>Introduction</h6>
-                        <div className='d-flex flex-row pb-1'>
-                            <input className='col-lg-6 mr-1 col-sm-12' placeholder='Name' />
-                            <input className='col-lg-6 col-sm-12' placeholder='Phone'/>
+                        <div className='row pb-1'>
+                            <input className='col-lg-6 ml-3 mr-4 col-sm-12' placeholder='Name' />
+                            <input className='col-lg-5 col-sm-12' placeholder='Phone'/>
                         </div>
                         <input className='col-12 pb-1' placeholder='Email*'/>
                         <h6>Message</h6>

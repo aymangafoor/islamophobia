@@ -24,7 +24,7 @@ button{
 }
 @media screen and (min-width: 575px){
     input:focus{
-        border: 1px solid #FAB62F;
+        border: 2px solid #FAB62F;
     }
 }
 
@@ -34,6 +34,7 @@ button{
     }
     input:focus{
         border-radius: 6px;
+        border: 2px solid #FAB62F;
     }
 }
 p{
