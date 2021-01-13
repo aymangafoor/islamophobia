@@ -16,6 +16,13 @@ font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: center;
+@media (max-width: 575px) {
+    border-radius: 6px;
+    height: 40px;
+    width: 130px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
 `;
 export default Button;
 
