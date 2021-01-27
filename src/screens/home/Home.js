@@ -3,7 +3,7 @@ import Footer from '../../component/footer/Footer'
 import Header from '../../component/header/Header'
 import './home.css'
 import chart1 from '../../component/assets/chart1.jpg'
-import chart2 from '../../component/assets/chart2.jpg'
+import chart2 from '../../component/assets/chart1.jpg'
 import img1 from '../../component/assets/img1.jpg'
 import img2 from '../../component/assets/img2.jpg'
 import img3 from '../../component/assets/img3.jpg'
@@ -107,11 +107,11 @@ const Home = () => {
                             <div className='row mx-5'>
                                 <div className='col-lg-6'>
                                     <h5>Article</h5>
-                                    <img className='card-image col' src={micro1} />
+                                    <img className='card-image rounded col' src={micro1} />
                                 </div>
                                 <div className='col-lg-6'>
                                     <h5>Books</h5>
-                                    <img className='card-image col' src={micro2} />
+                                    <img className='card-image rounded col' src={micro2} />
                                 </div>
 
                             </div>
@@ -119,11 +119,11 @@ const Home = () => {
                             <div className='row mx-5'>
                                 <div className='col-lg-6'>
                                     <h5>Videos</h5>
-                                    <img className='card-image col' src={micro3} />
+                                    <img className='card-image rounded col' src={micro3} />
                                 </div>
                                 <div className='col-lg-6'>
                                     <h5>Podcast</h5>
-                                    <img className='card-image col' src={micro4} />
+                                    <img className='card-image rounded col' src={micro4} />
                                 </div>
                             </div>
                         </div>

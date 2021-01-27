@@ -4,10 +4,10 @@ import Roboto from './fonts/Roboto.ttf'
 const Button = styled.button`
 height: 63.17073440551758px;
 width: 230px;
-background: ${props => props.white ? "#FAB62F" : "white"};
-color: ${props => props.white ? "white" : "#FAB62F"};
+background: ${props => props.white ? "#FAB62F" : "black"};
+color: ${props => props.white ? "black" : "#FAB62F"};
 border: 2px solid;
-border-color: ${props => props.white ? "white" : "#FAB62F"}
+border-color: ${props => props.white ? "black" : "#FAB62F"}
 box-sizing: border-box;
 font-family: ${Roboto};
 font-size: 20px;

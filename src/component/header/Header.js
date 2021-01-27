@@ -23,8 +23,8 @@ const Header = () => {
                         <button className='add-btn'><div className='h8 text-align-center'>ADD DATA</div></button>
                     </div>
                 </div>
-                <div className='links container mt-4'>
-                    <div className='row col-12 d-flex justify-content-center'>
+                <div className='links container-fluid mt-4'>
+                    <div className='row-fluid col-12 d-flex justify-content-center'>
                         <Link to='/definition'>Definition</Link>
                         <Link to='/tracking'>Tracking Islamophobia</Link>
                         <Link to='/everyday'>Everyday Islamophobia</Link>

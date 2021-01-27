@@ -1,3 +1,30 @@
+body{
+    background-color: black;
+    color: #ffffff;
+}
+a{
+    color: #ffffff !important;
+}
+.h7{
+    font-family: 'Roboto',normal;
+    color: #ffffff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .h8{
+    font-family: 'Roboto',normal;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 .b1{
     font-family: 'Roboto',normal;
     font-size: 20px;

@@ -19,11 +19,14 @@
     font-size: 28px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    color: #333333;
+    color: #ffffff;
 }
 .header button{
     height: 52px;
     width: 160px;
+}
+.add-btn .h8{
+    color: black !important;
 }
 .header button div{
     text-align: center;
@@ -35,7 +38,7 @@
 .links a{
     text-decoration: none;
     margin-right: 10px;
-    border-right: 1px solid  #a5a5a5;
+    border-right: 2px solid  #a5a5a5;
     font-family: 'Roboto',normal;
     font-weight: bold;
     color: black;
