@@ -1,0 +1,19 @@
+.books img{
+    height: 180px;
+    width: 120px;
+    box-shadow: -5px 5px grey;
+}
+.books .book{
+    padding: 10px 0px;
+    
+}
+.podcast img{
+    border-radius: 15px;
+}
+.next{
+    margin-left: -50px;
+    height: 60px;
+    margin-top: 80px;
+    width: 60px;
+    z-index: 99;
+}

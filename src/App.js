@@ -9,7 +9,7 @@ import Definition from './screens/definition/definition'
 import Everyday from './screens/everyday/everyday'
 import Tracking from './screens/tracking/tracking'
 import Library from './screens/library/library'
-
+import News from './screens/news/news'
 
 
 class App extends React.Component {
@@ -26,6 +26,7 @@ class App extends React.Component {
           <Route path='/definition' component={Definition} exact/>
           <Route path='/everyday' component={Everyday} exact/>
           <Route path='/tracking' component={Tracking} exact/>
+          <Route path='/news' component={News} exact/>
         </Switch>
         </BrowserRouter>
       </div>

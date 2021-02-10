@@ -45,10 +45,10 @@ const Tracking = () => {
                 <div class="input-group mb-3 mt-3 px-5">
                     <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" />
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src={search} alt='' /></button>
+                        <button class="btn btn-outline-secondary bg-white" type="button" id="button-addon2"><img src={search} alt='' /></button>
                     </div>
                 </div>
-                <div className='row px-5'>
+                <div className='dropdowns row px-5'>
                     <button class="btn dropdown-toggle">Date</button>
                     <button class="btn dropdown-toggle" type="button">Place of the incident</button>
                     <button class="btn dropdown-toggle" type="button">Legal Aid</button>
@@ -84,27 +84,22 @@ const Tracking = () => {
                         <Toggle className='bttn' style={{ backgroundColor: graph ? '#FAB62F' : 'white', color: graph ? 'white' : '#FAB62F' }} onClick={() => showGraph()}>Graph</Toggle>
                     </div>
                 </div>
-                <div className='container' style={{ display: !list ? 'none' : '' }}>
-                    <div className='d-flex flex-row mb-3 d-flex justify-content-center'>
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                    </div>
-                    <div className='d-flex flex-row mb-3 d-flex justify-content-center'>
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                    </div>
-                    <div className='mb-3 d-flex  flex-row justify-content-center'>
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
-                        <img className='col-3' src={list_img} alt='..' />
+                <div className='container-fluid' style={{ display: !list ? 'none' : '' }}>
+                    <div className='row px-5 py-2'>
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                    
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-3' src={list_img} alt='..' />
                     </div>
                 </div>
                 <div className='container justify-content-center py-3' style={{ display: map ? 'flex' : 'none' }}>

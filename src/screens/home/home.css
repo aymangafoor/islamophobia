@@ -32,6 +32,18 @@
     background: linear-gradient(180deg,#000000 0%,#000000 30%, #FAB62F 30%, #FAB62F 100%);
     z-index: 99;
 }
+.news1{
+    border: 1px solid white;
+}
+.news1 .toggles{
+    border-bottom: 1px solid white;
+}
+.news1 .card{
+    border: none !important;
+}
+.news img{
+    border-radius: 0px !important;
+}
 .everyday-text{
     color:#FAB62F;
     font-family: 'Roboto',normal;
@@ -73,6 +85,11 @@
     background-color: #000000;
     margin-bottom: 24px;
 }
+.incidents{
+    height: fit-content;
+    background-color: #000000;
+    width: 90%;
+}
 @media screen and (min-width: 575px) {
     .quick{
         display: none;
@@ -108,4 +125,11 @@
     height: 63px;
     width: 230px;
     color: #FAB62F;
+}
+.card{
+    background-color: #000000;
+    border-radius: 15px;
+}
+.card img{
+    border-radius: 0 !important;
 }

@@ -25,6 +25,12 @@ outline: none;
     font-size: 14px;
     background-color: #F9F9F9;
 }
+.dropdowns button{
+    color: white;
+}
+.dropdowns button:hover{
+    color: white;
+}
 .boxes{
     transform: rotate(180deg);
 }

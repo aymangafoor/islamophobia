@@ -7,3 +7,14 @@
     align-items: center;
     justify-content: center;
 }
+
+.hateds div{
+    background-color: black !important;
+}
+.card-body{
+    color: white !important;
+}
+
+.card{
+    border: 1px solid white;
+}

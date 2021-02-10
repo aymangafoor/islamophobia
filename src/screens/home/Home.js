@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Footer from '../../component/footer/Footer'
 import Header from '../../component/header/Header'
 import './home.css'
@@ -7,16 +7,40 @@ import chart2 from '../../component/assets/chart1.jpg'
 import img1 from '../../component/assets/img1.jpg'
 import img2 from '../../component/assets/img2.jpg'
 import img3 from '../../component/assets/img3.jpg'
-import micro1 from '../../component/assets/micro1.jpg'
-import micro2 from '../../component/assets/micro2.jpg'
-import micro3 from '../../component/assets/micro3.jpg'
-import micro4 from '../../component/assets/micro4.jpg'
 import hate from '../../component/assets/hate.jpg'
 import bag from '../../component/assets/bag.png'
+import news1 from '../../component/assets/news1.png'
+import news2 from '../../component/assets/library1.jpg'
+import news3 from '../../component/assets/news3.jpg'
+import lib1 from '../../component/assets/lib1.png'
+import lib2 from '../../component/assets/lib2.png'
+import lib3 from '../../component/assets/lib3.png'
+import list_img from '../../component/assets/list_card.jpg'
+
 import { Button } from '../../component'
+import Tableau from '../../component/tableau'
 
 
 const Home = () => {
+    // const useEffect = (() => {
+    //     createViz()
+    // }, [])
+    // const createViz = () => {
+
+    //     var vizDiv = document.getElementById("vizContainer");
+    //     var options = {
+    //         width: '600px',
+    //         height: '600px',
+    //         hideTabs: true,
+    //         hideToolbar: true,
+    //     };
+
+    //     var url = 'https://public.tableau.com/views/Islamophobia_Test/Dashboard23?:language=en&:display_count=y&:origin=viz_share_link'
+
+    //     var viz = new tableau.Viz(vizDiv, url, options);
+
+    // }
+
     return (
         <div>
             <Header />
@@ -27,8 +51,28 @@ const Home = () => {
                         <img className='col-lg-6 col-sm-12' src={chart1} />
                         <img className='col-lg-6 col-sm-12' src={chart2} />
                         <div className='white-box mx-3 mt-2 mb-6 col'></div>
-                    </div>
+                        <div className='incidents col-12 mx-auto mt-2 mb-4'>
+                            <h4 className='mx-auto col-6 mb-4'>Islamophobia Incidents</h4>
+                            <div className='container-fluid'>
+                                <div className='row px-5 py-2'>
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
 
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='latest container-fluid'>
                     <h4 className='mb-4'>Latest Incidents</h4>
@@ -69,10 +113,10 @@ const Home = () => {
                     <div className='everyday-text my-5'>Everyday Islamophobia</div>
                     <div className='container-fluid'>
                         <div className='row-fluid mx-5'>
-                            <img className='col-lg-3 col-sm-4 mb-3' src={img1} />
-                            <img className='col-lg-3 col-sm-4 mb-3' src={img2} />
-                            <img className='col-lg-3 col-sm-4 mb-3' src={img3} />
-                            <img className='col-lg-3 col-sm-4 mb-4' src={img1} />
+                            <img alt='..' className='col-lg-3 col-sm-4 mb-3' src={img1} />
+                            <img alt='..' className='col-lg-3 col-sm-4 mb-3' src={img2} />
+                            <img alt='..' className='col-lg-3 col-sm-4 mb-3' src={img3} />
+                            <img alt='..' className='col-lg-3 col-sm-4 mb-4' src={img1} />
                         </div>
                     </div>
                     <div className='d-flex justify-content-center'><Button className='my-5' white>SEE MORE</Button></div>
@@ -83,19 +127,19 @@ const Home = () => {
                     <h4 className='ml-5 mb-4 mt-4'>Quick Sections</h4>
                     <div className='col-sm-12  d-flex justify-content-center'>
                         <div className='datas row'>
-                            <img className='col-2 py-3' alt='..' src={bag} />
+                            <img alt='..' className='col-2 py-3' alt='..' src={bag} />
                             <div className='h7 col-10 d-flex align-items-center'>Islamophobia Library</div>
                         </div>
                     </div>
                     <div className='col-sm-12  d-flex justify-content-center'>
                         <div className='datas row'>
-                            <img className='col-2 py-3' alt='..' src={bag} />
+                            <img alt='..' className='col-2 py-3' alt='..' src={bag} />
                             <div className='h7 col-10 d-flex align-items-center'>Hate Groups</div>
                         </div>
                     </div>
                     <div className='col-sm-12  d-flex justify-content-center'>
                         <div className='datas row'>
-                            <img className='col-2 py-3 px-3' alt='..' src={bag} />
+                            <img alt='..' className='col-2 py-3 px-3' alt='..' src={bag} />
                             <div className='h7 col-10 d-flex align-items-center'>Everyday Islamophobia</div>
                         </div>
                     </div>
@@ -107,11 +151,44 @@ const Home = () => {
                             <div className='row mx-5'>
                                 <div className='col-lg-6'>
                                     <h5>Article</h5>
-                                    <img className='card-image rounded col' src={micro1} />
+                                    <div className='card mt-2 mb-3'>
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src={lib1} class="card-img" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <div className='row'>
+                                                        <p class="card-text col-6">ARTICLES</p>
+                                                        <p class="card-text col-6 text-align-right">3 DAYS TO GO</p>
+                                                    </div>
+                                                    <h5 class="card-title">7 Skills of Highly Effective Programmers</h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className='col-lg-6'>
                                     <h5>Books</h5>
-                                    <img className='card-image rounded col' src={micro2} />
+                                    <div className='card mt-2 mb-3'>
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src={lib2} class="card-img" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <div className='row'>
+                                                        <p class="card-text col-6">BOOKS</p>
+                                                        <p class="card-text col-6 text-align-right">3 DAYS TO GO</p>
+                                                    </div>
+                                                    <h5 class="card-title">7 Skills of Highly Effective Programmers</h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                             </div>
@@ -119,32 +196,111 @@ const Home = () => {
                             <div className='row mx-5'>
                                 <div className='col-lg-6'>
                                     <h5>Videos</h5>
-                                    <img className='card-image rounded col' src={micro3} />
+                                    <div className='card mt-2 mb-3'>
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src={lib3} class="card-img" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <div className='row'>
+                                                        <p class="card-text col-6">VIDEOS</p>
+                                                        <p class="card-text col-6 text-align-right">3 DAYS TO GO</p>
+                                                    </div>
+                                                    <h5 class="card-title">7 Skills of Highly Effective Programmers</h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className='col-lg-6'>
                                     <h5>Podcast</h5>
-                                    <img className='card-image rounded col' src={micro4} />
+                                    <div className='card mt-2 mb-3'>
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4">
+                                                <img src={lib1} class="card-img" alt="..." />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <div className='row'>
+                                                        <p class="card-text col-6">PODCAST</p>
+                                                        <p class="card-text col-6 text-align-right">3 DAYS TO GO</p>
+                                                    </div>
+                                                    <h5 class="card-title">7 Skills of Highly Effective Programmers</h5>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <div className='hln col-11 mt-5 mx-auto' />
-                    <div className='column'>
-                        <div className='container-fluid'>
-                            <div className='row mb-3 mx-5'>
-                                <div className='col-6  align-self-center'>
-                                    <h2 className='hate'>Hate Groups</h2>
-                                    <div className='b1'>
-                                        Not-so-fun fact: 61% of women say they’d rather talk about their own death than have a conversation about money.
-                                        That’s some societal money taboo BS, and we’re .
-                                        So this is The Money Talk, a series in which we’ll be answering example questions
-                                        about how to kick-start important money convos.
-                                </div>
-                                    <div className='mt-2'><Button>SEE MORE</Button></div>
-                                </div>
-                                <img className='col-6 my-5' src={hate} />
+                </div>
+                <div className='container-fluid px-5 news'>
+                    <h4 className='d-flex justify-content-center'>Islamophobia News</h4>
+                    <div className='row px-5'>
+                        <img src={news1} alt='..' className='col-8' />
+                        <div className='news1 col-4'>
+                            <div className='row toggles'>
+                                <div className='h7 col-6 news-btn-toggle'>FEATURED</div>
+                                <div className='h7 col-6 news-btn-toggle'>LATEST NEWS</div>
                             </div>
+                            <div className='card mt-4 mb-3'>
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                        <img src={news2} class="card-img" alt="..." />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <div class="b4 ml-4 card-title">7 Skills of Highly Effective Programmers 7 Skills.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='card mt-2 mb-3'>
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                        <img src={news2} class="card-img" alt="..." />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <div class="b4 ml-4 card-title">7 Skills of Highly Effective Programmers 7 Skills.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='card mt-2 mb-3'>
+                                <div class="row no-gutters">
+                                    <div class="col-md-5">
+                                        <img src={news2} class="card-img" alt="..." />
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body">
+                                            <div class="b4 ml-4 card-title">7 Skills of Highly Effective Programmers 7 Skills.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='column'>
+                    <div className='container-fluid'>
+                        <div className='row mb-3 mx-5'>
+                            <div className='col-6  align-self-center'>
+                                <h2 className='hate'>Hate Groups</h2>
+                                <div className='b1'>
+                                    Not-so-fun fact: 61% of women say they’d rather talk about their own death than have a conversation about money.
+                                    That’s some societal money taboo BS, and we’re .
+                                    So this is The Money Talk, a series in which we’ll be answering example questions
+                                    about how to kick-start important money convos.
+                                </div>
+                                <div className='mt-2'><Button>SEE MORE</Button></div>
+                            </div>
+                            <img className='col-6 my-5' src={hate} />
                         </div>
                     </div>
                 </div>

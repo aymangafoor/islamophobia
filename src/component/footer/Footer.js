@@ -21,7 +21,7 @@ class Footer extends React.Component {
                     <div className='tags'>
                         <div className='singletag'>
                             <Link className='pb-3' to='/'>Mobile app</Link>
-                            <div className='subtag'>
+                            <div className='subtag pt-2'>
                                 <Link to='/'>Features</Link>
                                 <Link to='/'>Live Share</Link>
                                 <Link to='/'>Video record</Link>
@@ -29,7 +29,7 @@ class Footer extends React.Component {
                         </div>
                         <div className='singletag'>
                             <Link className='pb-3' to='/'>Community</Link>
-                            <div className='subtag'>
+                            <div className='subtag pt-2'>
                                 <Link to='/'>Featured artist</Link>
                                 <Link to='/'>The Portal</Link>
                                 <Link to='/'>Live events</Link>
@@ -37,7 +37,7 @@ class Footer extends React.Component {
                         </div>
                         <div className='singletag'>
                             <Link className='pb-3' to='/'>Company</Link>
-                            <div className='subtag'>
+                            <div className='subtag pt-2'>
                                 <Link to='/'>About us</Link>
                                 <Link to='/'>Contact us</Link>
                                 <Link to='/'>History</Link>

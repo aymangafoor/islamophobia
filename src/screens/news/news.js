@@ -4,16 +4,16 @@ import Header from '../../component/header/Header'
 import img1 from '../../component/assets/library1.jpg'
 import img2 from '../../component/assets/library2.jpg'
 import img3 from '../../component/assets/library3.jpg'
-import './hate.css'
+import './news.css'
 
-const Hate = () => {
+const News = () => {
     return (
         <div>
             <Header />
             <div className='banner'>
-                <h3>Islamophobs</h3>
+                <h3>Islamophobia News</h3>
             </div>
-            <div className='container-fluid hateds px-5 mt-5 mb-5'>
+            <div className='container-fluid news px-5 mt-5 mb-5'>
                 <div className='card mt-2 mb-3'>
                     <div class="row no-gutters">
                         <div class="col-md-4">
@@ -58,4 +58,4 @@ const Hate = () => {
         </div>
     )
 }
-export default Hate;
+export default News
