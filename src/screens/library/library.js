@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React,{ useState, useEffect } from 'react'
+import {BASE} from '../../api/api'
+import axios from 'axios'
 import { Toggle } from '../../component'
 import Footer from '../../component/footer/Footer'
 import Header from '../../component/header/Header'
@@ -29,6 +31,20 @@ import next from '../../component/assets/next.png'
 
 
 const Library = () => {
+    const [library,editHate] = useState([])
+    const [book, editBook] = useState([])
+    useEffect(()=>{
+        axios.get(BASE + 'jsonapi/node/islamophobia_library?include=field_page_components')
+        .then((data) =>{
+            editHate(data.data)
+        })
+        axios.get(BASE + 'jsonapi/node/book')
+        .then((data) =>{
+            editBook(data.data)
+        })
+    },[])
+    console.log('library', library)
+    console.log('books', book)
     const [videos, changeVideo] = useState(false)
     const [article, changeArticle] = useState(true)
     const [books, changeBooks] = useState(false)

@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{ useState, useEffect } from 'react'
+import {BASE} from '../../api/api'
+import axios from 'axios'
 import Footer from '../../component/footer/Footer'
 import Header from '../../component/header/Header'
 import img1 from '../../component/assets/library1.jpg'
@@ -7,6 +9,13 @@ import img3 from '../../component/assets/library3.jpg'
 import './hate.css'
 
 const Hate = () => {
+    const [hate,editHate] = useState([])
+    useEffect(()=>{
+        axios.get(BASE + 'jsonapi/node/hate_group_list')
+        .then((data) =>{
+            editHate(data.data)
+        })
+    },[])
     return (
         <div>
             <Header />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Footer from '../../component/footer/Footer'
 import Header from '../../component/header/Header'
 import './tracking.css'
@@ -12,14 +12,29 @@ import graph4 from '../../component/assets/graph4.jpg'
 import graph5 from '../../component/assets/graph5.jpg'
 import graph6 from '../../component/assets/graph6.jpg'
 import { Toggle } from '../../component'
+import {BASE} from '../../api/api'
+import Axios from 'axios'
 
 
 
 const Tracking = () => {
+    useEffect(()=>{
+        Axios.get(BASE + 'jsonapi/node/tracking_islamophobia?include=field_casual_factor,field_image,field_legal_aid,field_nature_of_harm,field_party_in_power,field_place_of_incident,field_role_of_police',{
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+               }
+        })
+        .then((data)=>{
+            console.log('tracking data', data)
+            editTrack(data.data)
+        })
+    },[])
     const [list, changeList] = useState(true)
     const [map, changeMap] = useState(false)
     const [graph, changeGraph] = useState(false)
     const [drops, drop] = useState(false)
+    const [tracking, editTrack] = useState([])
     const showList = () => {
         changeList(true)
         changeMap(false)
@@ -45,7 +60,7 @@ const Tracking = () => {
                 <div class="input-group mb-3 mt-3 px-5">
                     <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" />
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary bg-white" type="button" id="button-addon2"><img src={search} alt='' /></button>
+                        <button class="btn bg-white" type="button" id="button-addon2"><img src={search} alt='' /></button>
                     </div>
                 </div>
                 <div className='dropdowns row px-5'>

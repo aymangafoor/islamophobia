@@ -19,28 +19,13 @@ import list_img from '../../component/assets/list_card.jpg'
 
 import { Button } from '../../component'
 import Tableau from '../../component/tableau'
+import ReactHtmlParser from 'react-html-parser';
 
+const home1 = 'https://public.tableau.com/views/Islamophobia_Final/Home1?:language=en&:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link'
+const home2 = 'https://public.tableau.com/views/Islamophobia_Final/Home2?:language=en&:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link'
+const home3 = 'https://public.tableau.com/views/Islamophobia_Final/Home3?:language=en&:embed=y&:embed_code_version=3&:loadOrderID=0&:display_count=y&:origin=viz_share_link'
 
 const Home = () => {
-    // const useEffect = (() => {
-    //     createViz()
-    // }, [])
-    // const createViz = () => {
-
-    //     var vizDiv = document.getElementById("vizContainer");
-    //     var options = {
-    //         width: '600px',
-    //         height: '600px',
-    //         hideTabs: true,
-    //         hideToolbar: true,
-    //     };
-
-    //     var url = 'https://public.tableau.com/views/Islamophobia_Test/Dashboard23?:language=en&:display_count=y&:origin=viz_share_link'
-
-    //     var viz = new tableau.Viz(vizDiv, url, options);
-
-    // }
-
     return (
         <div>
             <Header />
@@ -48,31 +33,42 @@ const Home = () => {
                 <div className='tracking container-fluid'>
                     <div className='tr-is'>Tracking Islamophobia</div>
                     <div className='row mt-4 mx-5'>
-                        <img className='col-lg-6 col-sm-12' src={chart1} />
+                        {/* <img className='col-lg-6 col-sm-12' src={chart1} />
                         <img className='col-lg-6 col-sm-12' src={chart2} />
-                        <div className='white-box mx-3 mt-2 mb-6 col'></div>
-                        <div className='incidents col-12 mx-auto mt-2 mb-4'>
-                            <h4 className='mx-auto col-6 mb-4'>Islamophobia Incidents</h4>
-                            <div className='container-fluid'>
-                                <div className='row px-5 py-2'>
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <div className='white-box mx-3 mt-2 mb-6 col'></div> */}
+                        <div className='col-6  my-2'>
+                            <Tableau url={home1}/> 
+                        </div>
+                        <div className='col-6  my-2'>
+                            <Tableau url={home2}/> 
+                        </div>
+                        <div className='col-12 my-2'>
+                            <Tableau url={home3}/> 
+                        </div>
+                        
+                    </div>
+                    <div className='incidents col-11 mx-auto  mt-2 mb-4'>
+                        <h4 className='mx-auto text-align-center col-6 mb-4'>Islamophobia Incidents</h4>
+                        <div className='container-fluid'>
+                            <div className='row px-5 py-2'>
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
 
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
 
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                    <img className='col-3 pb-3' src={list_img} alt='..' />
-                                </div>
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-3' src={list_img} alt='..' />
                             </div>
                         </div>
                     </div>
+                    <div className='yellow-box mx-3 mt-2 mb-6 col'></div>
                 </div>
                 <div className='latest container-fluid'>
                     <h4 className='mb-4'>Latest Incidents</h4>

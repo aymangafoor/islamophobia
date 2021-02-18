@@ -1,9 +1,15 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import {BASE} from '../../api/api'
 import Footer from '../../component/footer/Footer'
 import Header from '../../component/header/Header'
 import './contact.css'
 
 const Contact = () => {
+    const [data,setData] = useState([])
+    useEffect(()=>{
+        axios.post(BASE + 'contact_message?_format=json',{data})
+    })
     return (
         <div>
             <Header />
