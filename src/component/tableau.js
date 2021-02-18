@@ -21,10 +21,7 @@ const home3 = 'https://public.tableau.com/views/Islamophobia_Final/Home3?:langua
          initViz();
      },[])
     return(
-        <div>
-            <div ref={ref}></div>
-        </div>
-        
+        <div ref={ref}></div>
     );
 }
 export default Tableau;

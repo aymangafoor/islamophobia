@@ -38,12 +38,11 @@
 .links a{
     text-decoration: none;
     margin-right: 10px;
-    border-right: 2px solid  #a5a5a5;
     font-family: 'Roboto',normal;
     font-weight: bold;
     color: black;
     padding-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .links a:last-child{
     border-right: none;

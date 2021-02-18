@@ -1,14 +1,17 @@
+body{
+    overflow-x: hidden;
+}
 .home{
     margin: 0px,20px;
 }
 .tr-is{
     padding-top: 72px;
     font-family: 'Roboto', normal;
-    color: #FFFFFF;
-    font-size: 48px;
+    color: #000;
+    font-size: 39px;
     font-style: normal;
     font-weight: 700;
-    line-height: 58px;
+    line-height: 48px;
     letter-spacing: 0em;
     text-align: center;
 }
@@ -21,8 +24,11 @@
 .chart1{
     margin-left: 40px;
     margin-right: 20px;
-    height: 340px;
-    width: 586px;
+    height: 340px !important;
+    width: 586px !important;
+}
+.incidents img{
+    border-radius: 25px;
 }
 .chart2{
     height: 340px;
@@ -43,6 +49,14 @@
 }
 .news img{
     border-radius: 0px !important;
+}
+.news .toggles div{
+    padding-bottom: 5px;
+    justify-content: center;
+    padding-top: 5px;
+}
+.news .toggles div:first-child{
+    border-bottom: 5px solid #FAB62F;
 }
 .everyday-text{
     color:#FAB62F;

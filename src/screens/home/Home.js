@@ -39,7 +39,7 @@ const Home = () => {
                         <div className='col-6  my-2'>
                             <Tableau url={home1}/> 
                         </div>
-                        <div className='col-6  my-2'>
+                        <div className='col-6 my-2'>
                             <Tableau url={home2}/> 
                         </div>
                         <div className='col-12 my-2'>
@@ -47,24 +47,24 @@ const Home = () => {
                         </div>
                         
                     </div>
-                    <div className='incidents col-11 mx-auto  mt-2 mb-4'>
-                        <h4 className='mx-auto text-align-center col-6 mb-4'>Islamophobia Incidents</h4>
+                    <div className='incidents col-11 mx-auto  mt-4 mb-4'>
+                        <h4 className='mx-auto text-align-center col-6 pt-4 mb-4'>Islamophobia Incidents</h4>
                         <div className='container-fluid'>
-                            <div className='row px-5 py-2'>
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                            <div className='row px-5 pt-2 pb-5'>
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
 
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
 
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
-                                <img className='col-3 pb-3' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
+                                <img className='col-3 pb-4' src={list_img} alt='..' />
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ const Home = () => {
                 </div>
                 <div className='library'>
                     <div className='column m-2'>
-                        <h4 className='d-flex justify-content-center'>Islamophobia Library</h4>
+                        <h4 className='d-flex justify-content-center my-5'>Islamophobia Library</h4>
                         <div className='container-fluid'>
                             <div className='row mx-5'>
                                 <div className='col-lg-6'>
@@ -236,12 +236,12 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='container-fluid px-5 news'>
-                    <h4 className='d-flex justify-content-center'>Islamophobia News</h4>
+                    <h4 className='d-flex justify-content-center my-5'>Islamophobia News</h4>
                     <div className='row px-5'>
                         <img src={news1} alt='..' className='col-8' />
                         <div className='news1 col-4'>
                             <div className='row toggles'>
-                                <div className='h7 col-6 news-btn-toggle'>FEATURED</div>
+                                <div className='h7 col-6 text-align-center news-btn-toggle'>FEATURED</div>
                                 <div className='h7 col-6 news-btn-toggle'>LATEST NEWS</div>
                             </div>
                             <div className='card mt-4 mb-3'>
@@ -285,7 +285,7 @@ const Home = () => {
                 </div>
                 <div className='column'>
                     <div className='container-fluid'>
-                        <div className='row mb-3 mx-5'>
+                        <div className='row my-5 mx-5'>
                             <div className='col-6  align-self-center'>
                                 <h2 className='hate'>Hate Groups</h2>
                                 <div className='b1'>

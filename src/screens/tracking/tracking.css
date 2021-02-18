@@ -7,6 +7,14 @@
     align-items: center;
     justify-content: center;
 }
+.tracking-list{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.dropdowns{
+    display: flex;
+    justify-content: space-between;
+}
 button:focus{
 outline: none;
 }

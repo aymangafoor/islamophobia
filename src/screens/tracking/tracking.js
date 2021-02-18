@@ -14,8 +14,9 @@ import graph6 from '../../component/assets/graph6.jpg'
 import { Toggle } from '../../component'
 import {BASE} from '../../api/api'
 import Axios from 'axios'
+import Tableau from '../../component/tableau'
 
-
+const dash = 'https://public.tableau.com/views/Islamophobia_Test/Dashboard23'
 
 const Tracking = () => {
     useEffect(()=>{
@@ -93,14 +94,14 @@ const Tracking = () => {
                     <button class="btn dropdown-toggle">Causal Factors</button>
                 </div>
                 <div className='row px-5'>
-                    <div className='col-2.5 mb-3 px-3 ml-3'>
+                    <div className='col-2.5 mt-5 mb-3 ml-3'>
                         <Toggle className='bttn' style={{ backgroundColor: list ? '#FAB62F' : 'white', color: list ? 'white' : '#FAB62F' }} onClick={() => showList()}>List</Toggle>
                         <Toggle className='bttn' style={{ backgroundColor: map ? '#FAB62F' : 'white', color: map ? 'white' : '#FAB62F' }} onClick={() => showMap()}>Map</Toggle>
                         <Toggle className='bttn' style={{ backgroundColor: graph ? '#FAB62F' : 'white', color: graph ? 'white' : '#FAB62F' }} onClick={() => showGraph()}>Graph</Toggle>
                     </div>
                 </div>
                 <div className='container-fluid' style={{ display: !list ? 'none' : '' }}>
-                    <div className='row px-5 py-2'>
+                    <div className='row tracking-list py-2'>
                         <img className='col-3 pb-3' src={list_img} alt='..' />
                         <img className='col-3 pb-3' src={list_img} alt='..' />
                         <img className='col-3 pb-3' src={list_img} alt='..' />
@@ -121,7 +122,10 @@ const Tracking = () => {
                     <img className='col-6' src={maps} alt='' />
                 </div>
                 <div className='container-fluid' style={{ display: graph ? '' : 'none' }}>
-                    <div className='row mb-1'>
+                    <div className='w-100 mb-3'>
+                        <Tableau url={dash}/>
+                    </div>
+                    {/* <div className='row mb-1'>
                         <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>
                             <h6>Place of the Incident</h6>
                             <div className='row boxes d-flex flex-row-reverse justify-content-center mb-2'>
@@ -165,8 +169,8 @@ const Tracking = () => {
                             </div>
 
                         </div>
-                    </div>
-                    <div className='row mb-1'>
+                    </div> */}
+                    {/* <div className='row mb-1'>
                         <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>
                             <h6>Casual Factors</h6>
                             <img height={180} width={300} src={graph3} alt='..' />
@@ -185,7 +189,7 @@ const Tracking = () => {
                             <h6>Nature of Harm</h6>
                             <img height={180} width={300} src={graph6} alt='..' />
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>
