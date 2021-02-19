@@ -21,7 +21,7 @@ const Header = () => {
                         </div>
                     </Link>
 
-                    <div className='add col-2'>
+                    <div className='add ml-auto pr-5'>
                         <button className='add-btn'><div className='h8 text-align-center'>ADD DATA</div></button>
                     </div>
                 </div>

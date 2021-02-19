@@ -51,7 +51,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 100px;
     font-family: Georgia;
     font-size: 32px;
     font-style: normal;
@@ -82,7 +81,6 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    margin-right: 100px;
     margin-top: -20px;
 }
 .singletag{
@@ -117,7 +115,6 @@ text-align: left;
     flex-direction: row;
 }
 .copy{
-    margin-left: 100px;
     font-family: Helvetica;
     font-size: 15px;
     font-style: normal;
@@ -131,7 +128,7 @@ text-align: left;
     display: flex;
     align-items: flex-end;
     position: absolute;
-    right: 100px;
+    right: 0;
     flex-direction: row;
     font-family: Helvetica;
     font-size: 15px;

@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 .h7{

@@ -101,29 +101,29 @@ const Tracking = () => {
                     </div>
                 </div>
                 <div className='container-fluid' style={{ display: !list ? 'none' : '' }}>
-                    <div className='row tracking-list py-2'>
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                    <div className='row tracking-list pt-2 py-5'>
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
                     
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
 
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
-                        <img className='col-3 pb-3' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
+                        <img className='col-3 pb-4' src={list_img} alt='..' />
                     </div>
                 </div>
                 <div className='container justify-content-center py-3' style={{ display: map ? 'flex' : 'none' }}>
                     <img className='col-6' src={maps} alt='' />
                 </div>
                 <div className='container-fluid' style={{ display: graph ? '' : 'none' }}>
-                    <div className='w-100 mb-3'>
-                        <Tableau url={dash}/>
+                    <div className='dash mt-3 mb-5'>
+                        <Tableau  url={dash}/>
                     </div>
                     {/* <div className='row mb-1'>
                         <div className='col-lg-5 col-sm-12 mr-sm-2 border border-primary'>

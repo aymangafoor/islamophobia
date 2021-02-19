@@ -10,10 +10,19 @@
 .podcast img{
     border-radius: 15px;
 }
+.podcast div img:first-child{
+    border-radius: 30px;
+    max-width: 89%;
+}
 .next{
     margin-left: -50px;
     height: 60px;
     margin-top: 80px;
     width: 60px;
     z-index: 99;
+}
+
+.videos-library{
+    padding-left: 2.1rem !important;
+    padding-right: 2.1rem !important;
 }

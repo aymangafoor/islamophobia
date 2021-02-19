@@ -79,7 +79,7 @@ const Library = () => {
             <div className='banner'>
                 <h3>Library</h3>
             </div>
-            <div className='container-fluid px-5 mt-2 mb-2'>
+            <div className='container-fluid px-5 mt-5 mb-2'>
                 <div className='row'>
                     <div className='col-lg-6'>
                         <div className='row px-5 mb-3'>
@@ -145,7 +145,7 @@ const Library = () => {
                     </div>
 
                     <div className='container-fluid' style={{ display: !videos ? 'none' : '' }}>
-                        <div className='row px-5 py-2'>
+                        <div className='row videos-library pt-2 pb-5'>
                             <img className='col-3 pb-3' src={list_img} alt='..' />
                             <img className='col-3 pb-3' src={list_img} alt='..' />
                             <img className='col-3 pb-3' src={list_img} alt='..' />
@@ -241,73 +241,73 @@ const Library = () => {
                         </div>
                     </div>
                     <div className='container py-5 podcast' style={{display: podcast ? '':'none'}}>
-                        <h5>Top podcasts</h5>
+                        <h5 className='pb-2'>Top podcasts</h5>
                         <div className='row'>
                             <div className='col-3'>
                                 <img src={toppod1}/>
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
                                 <img src={toppod2} />
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
                                 <img src={toppod3} />
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
-                                <div className='row'><img className='col-10' src={toppod4}/> <img className='next' src={next} /></div>
+                                <div className='row'><img className='col' src={toppod4}/> <img className='next' src={next} /></div>
                                 
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                         </div>
-                        <h5>Trending podcasts</h5>
+                        <h5 className='pt-5 pb-2'>Trending podcasts</h5>
                         <div className='row'>
                             <div className='col-3'>
                                 <img src={trentpod1}/>
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
                                 <img src={trentpod2} />
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
                                 <img src={trentpod3} />
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
-                                <img src={trentpod4}/>
-                                <div className='Ag'>The Daily</div>
+                            <div className='row'><img className='col' src={trentpod4}/> <img className='next' src={next} /></div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                         </div>
-                        <h5>Top podcasts in Society & Culture</h5>
+                        <h5 className='pt-5 pb-2'>Top podcasts in Society & Culture</h5>
                         <div className='row'>
                             <div className='col-3'>
                                 <img src={scpod1}/>
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
                                 <img src={scpod2} />
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
                                 <img src={scpod3} />
-                                <div className='Ag'>The Daily</div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                             <div className='col-3'>
-                                <img src={scpod4}/>
-                                <div className='Ag'>The Daily</div>
+                            <div className='row'><img className='col' src={scpod4}/> <img className='next' src={next} /></div>
+                                <div className='Ag pt-1'>The Daily</div>
                                 <div className='b2'>The New York Times</div>
                             </div>
                         </div>

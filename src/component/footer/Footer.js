@@ -14,11 +14,11 @@ class Footer extends React.Component {
             <div className='footer'>
                 <SprtFooter />
                 <div className='downfooter'>
-                    <div className='footerlogo'>
+                    <div className='footerlogo pl-5'>
                         <div className='footermainlogo'>Islamophobia</div>
                         <div className='footersublogo'>India</div>
                     </div>
-                    <div className='tags'>
+                    <div className='tags pr-5'>
                         <div className='singletag'>
                             <Link className='pb-3' to='/'>Mobile app</Link>
                             <div className='subtag pt-2'>
@@ -45,8 +45,8 @@ class Footer extends React.Component {
                         </div>
                     </div>
                     <div className='row mt-4 mb-4 border-top'>
-                        <div className='copy mt-2'>© Copyright 2021. </div>
-                        <div className='follow mt-2'>Follow us:{' '}
+                        <div className='copy mt-2 pl-5'>© Copyright 2021. </div>
+                        <div className='follow mt-2 pr-5'>Follow us:{' '}
                             <img className='social ml-2' src={follow} />
                             <img className='social' src={follow} />
                             <img className='social' src={follow} />
