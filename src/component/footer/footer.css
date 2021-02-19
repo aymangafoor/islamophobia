@@ -50,7 +50,6 @@
 .footerlogo{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     font-family: Georgia;
     font-size: 32px;
     font-style: normal;
@@ -58,6 +57,9 @@
     line-height: 14px;
     letter-spacing: 0.20000000298023224px;
     text-align: center;
+}
+.footerlogo{
+    padding-left: 4.9rem !important;
 }
 .footermainlogo{
     display: flex;
@@ -81,10 +83,19 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    margin-top: -20px;
+    margin-left: auto;
+    width: 30%;
+    padding-right: 4.9rem !important;
+}
+.first-down{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3rem;
 }
 .singletag{
-    margin-right: 15px;
+    margin-right: 5rem !important;
+    white-space: nowrap;
 }
 .tags a{
     font-family: 'Roboto',normal;
@@ -122,6 +133,8 @@ text-align: left;
     line-height: 24px;
     letter-spacing: -0.015em;
     text-align: left;
+    padding-left: 4.9rem !important;
+
 
 }
 .follow{
@@ -137,6 +150,7 @@ text-align: left;
     line-height: 24px;
     letter-spacing: -0.015em;
     text-align: right;
+    padding-right: 4.9rem !important;
 
 }
 .follow span{

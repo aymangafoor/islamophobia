@@ -28,6 +28,9 @@
 .add-btn .h8{
     color: black !important;
 }
+.add{
+    padding-right: 4.9rem !important;
+}
 .header button div{
     text-align: center;
 }
@@ -39,7 +42,6 @@
     text-decoration: none;
     margin-right: 10px;
     font-family: 'Roboto',normal;
-    font-weight: bold;
     color: black;
     padding-right: 10px;
     margin-bottom: 10px;

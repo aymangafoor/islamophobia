@@ -42,7 +42,7 @@ const Home = () => {
                         <div className='col-6 my-2'>
                             <Tableau url={home2}/> 
                         </div>
-                        <div className='col-12 my-2'>
+                        <div className='col-12 my-3 mb-3'>
                             <Tableau url={home3}/> 
                         </div>
                         

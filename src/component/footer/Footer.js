@@ -14,39 +14,42 @@ class Footer extends React.Component {
             <div className='footer'>
                 <SprtFooter />
                 <div className='downfooter'>
-                    <div className='footerlogo pl-5'>
-                        <div className='footermainlogo'>Islamophobia</div>
-                        <div className='footersublogo'>India</div>
+                    <div className='row first-down'>
+                        <div className='footerlogo'>
+                            <div className='footermainlogo'>Islamophobia</div>
+                            <div className='footersublogo'>India</div>
+                        </div>
+                        <div className='tags'>
+                            <div className='singletag'>
+                                <Link className='pb-3' to='/'>Mobile app</Link>
+                                <div className='subtag pt-2'>
+                                    <Link to='/'>Features</Link>
+                                    <Link to='/'>Live Share</Link>
+                                    <Link to='/'>Video record</Link>
+                                </div>
+                            </div>
+                            <div className='singletag'>
+                                <Link className='pb-3' to='/'>Community</Link>
+                                <div className='subtag pt-2'>
+                                    <Link to='/'>Featured artist</Link>
+                                    <Link to='/'>The Portal</Link>
+                                    <Link to='/'>Live events</Link>
+                                </div>
+                            </div>
+                            <div className='singletag'>
+                                <Link className='pb-3' to='/'>Company</Link>
+                                <div className='subtag pt-2'>
+                                    <Link to='/'>About us</Link>
+                                    <Link to='/'>Contact us</Link>
+                                    <Link to='/'>History</Link>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className='tags pr-5'>
-                        <div className='singletag'>
-                            <Link className='pb-3' to='/'>Mobile app</Link>
-                            <div className='subtag pt-2'>
-                                <Link to='/'>Features</Link>
-                                <Link to='/'>Live Share</Link>
-                                <Link to='/'>Video record</Link>
-                            </div>
-                        </div>
-                        <div className='singletag'>
-                            <Link className='pb-3' to='/'>Community</Link>
-                            <div className='subtag pt-2'>
-                                <Link to='/'>Featured artist</Link>
-                                <Link to='/'>The Portal</Link>
-                                <Link to='/'>Live events</Link>
-                            </div>
-                        </div>
-                        <div className='singletag'>
-                            <Link className='pb-3' to='/'>Company</Link>
-                            <div className='subtag pt-2'>
-                                <Link to='/'>About us</Link>
-                                <Link to='/'>Contact us</Link>
-                                <Link to='/'>History</Link>
-                            </div>
-                        </div>
-                    </div>
+
                     <div className='row mt-4 mb-4 border-top'>
-                        <div className='copy mt-2 pl-5'>© Copyright 2021. </div>
-                        <div className='follow mt-2 pr-5'>Follow us:{' '}
+                        <div className='copy mt-2'>© Copyright 2021. </div>
+                        <div className='follow mt-2'>Follow us:{' '}
                             <img className='social ml-2' src={follow} />
                             <img className='social' src={follow} />
                             <img className='social' src={follow} />
