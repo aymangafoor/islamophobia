@@ -1,6 +1,5 @@
 {
   "name": "islamophobia",
-  "homepage": "islph.tridz.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
